@@ -1,0 +1,2 @@
+# Маяковский
+print(*input().split(), sep='\n')

@@ -1,0 +1,12 @@
+from math import gcd
+
+n, a, b = [int(input()) for _ in range(3)]
+if n > 10000000:
+    print(n // a + n // b - n // (a * b // gcd(a, b)))
+else:
+    nums = set()
+    for i in range(a, n + 1, a):
+        nums.add(i)
+    for i in range(b, n + 1, b):
+        nums.add(i)
+    print(len(nums))
